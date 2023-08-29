@@ -1,4 +1,4 @@
-# goit-react-hw-03-phonebook
+# React homework template
 
 Этот проект был создан при помощи
 [Create React App](https://github.com/facebook/create-react-app). Для знакомства

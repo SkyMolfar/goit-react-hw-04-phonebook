@@ -1,30 +1,25 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { FilterContainer, FilterInput } from './Filter.styled';
-
-const Filter = ({ value, onChange }) => {
+import {
+  FormInput,
+  FindLabel,
+  FindWrapper,
+} from 'components/ContactForm/ContactForm.styled';
+export function Filter({ onFilterContact, filter }) {
   return (
-    <FilterContainer>
-      <FilterInput
+    <FindWrapper>
+      <FindLabel htmlFor="filter">Find contact</FindLabel>
+      <FormInput
         type="text"
         name="filter"
-        placeholder="Пошук контактів"
-        value={value}
-        onChange={onChange}
+        title="Find phonebook contact"
+        value={filter}
+        onChange={onFilterContact}
       />
-    </FilterContainer>
+    </FindWrapper>
   );
-};
-
-
-
+}
 
 Filter.propTypes = {
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  onFilterContact: PropTypes.func.isRequired,
+  filter: PropTypes.string.isRequired,
 };
-
-export default Filter;
-
-
-
