@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ContactItem from '../ContactItem/ContactItem';
+import  ContactItem  from '../ContactItem/ContactItem';
 import { ContactListContainer, ContactListItems } from './ContactList.styled';
 
 const ContactList = ({ contacts, onDeleteContact }) => {
@@ -33,6 +33,7 @@ ContactList.propTypes = {
 };
 
 export default ContactList;
+
 
  
 
